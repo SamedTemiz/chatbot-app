@@ -1,9 +1,7 @@
 import numpy as np
 import nltk
-# nltk.download('punkt')
-from nltk.stem.porter import PorterStemmer
-stemmer = PorterStemmer()
-
+from trnlp import TrnlpWord
+stemmer = TrnlpWord()
 
 def tokenize(sentence):
     """
@@ -21,7 +19,8 @@ def stem(word):
     words = [stem(w) for w in words]
     -> ["organ", "organ", "organ"]
     """
-    return stemmer.stem(word.lower())
+    stemmer.setword(word)
+    return stemmer.get_stem
 
 
 def bag_of_words(tokenized_sentence, words):
@@ -47,6 +46,10 @@ def bag_of_words(tokenized_sentence, words):
     return bag
 
 
-words = ["Organize", "Organizeler", "Organize etmek"]
+words = ["arkadaşlar", "baltacılar", "sonrasında"]
 stemmed_words = [stem(w) for w in words]
 print(stemmed_words)
+
+sentence = "bugün ve yarın"
+tokenized_sentence = tokenize(sentence)
+print(tokenized_sentence)

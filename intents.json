@@ -3,81 +3,81 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Merhaba",
+        "Selam",
+        "Nasılsın",
+        "Orada kimse var mı?",
+        "Merhabalar",
+        "Günaydın"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Merhaba :-)",
+        "Merhaba, ziyaret ettiğiniz için teşekkürler",
+        "Merhaba, size nasıl yardımcı olabilirim?",
+        "Merhaba, size nasıl yardım edebilirim?"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["Hoşça kal", "Sonra görüşürüz", "Güle güle"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Sonra görüşürüz, ziyaret ettiğiniz için teşekkürler",
+        "İyi günler",
+        "Güle güle! Bir dahaki sefere tekrar gelin."
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "patterns": ["Teşekkürler", "Teşekkür ederim", "Bu yardımcı oldu", "Çok teşekkürler!"],
+      "responses": ["Yardımcı olabildiysem mutluluk duyarım!", "Her zaman!", "Benim için bir zevkti"]
     },
     {
       "tag": "items",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Hangi ürünlere sahipsiniz?",
+        "Neler var türden ürünleriniz?",
+        "Ne satıyorsunuz?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Kahve ve çay satıyoruz",
+        "Bizde kahve ve çay bulunmaktadır"
       ]
     },
     {
       "tag": "payments",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Kredi kartı alıyor musunuz?",
+        "Mastercard'ı kabul ediyor musunuz?",
+        "Paypal ile ödeme yapabilir miyim?",
+        "Sadece nakit mi kabul ediyorsunuz?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "VISA, Mastercard ve Paypal kabul ediyoruz",
+        "Çoğu büyük kredi kartını ve Paypal'ı kabul ediyoruz"
       ]
     },
     {
       "tag": "delivery",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Teslimat ne kadar sürer?",
+        "Kargo ne kadar sürer?",
+        "Teslimatımı ne zaman alırım?"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Teslimat 2-4 gün sürer",
+        "Kargo 2-4 gün sürer"
       ]
     },
     {
       "tag": "funny",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "Bana bir şaka anlat!",
+        "Bana komik bir şey söyle!",
+        "Bir şaka biliyor musun?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Neden hipster ağzını yaktı? Kahveyi soğumadan içti.",
+        "Bufalo'nun oğlu üniversiteye giderken ne dedi? Bison."
       ]
     }
   ]

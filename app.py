@@ -3,11 +3,11 @@ from flask import Flask, render_template, request, jsonify
 from chat import get_response
 
 app = Flask(__name__)
-
+app.config['JSON_AS_ASCII'] = False
 
 @app.get("/")
 def index_get():
-    return render_template("base.html")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
@@ -16,7 +16,6 @@ def predict():
     response = get_response(text)
     message = {"answer": response}
     return jsonify(message)
-
 
 if __name__ == "__main__":
     app.run(debug=True)

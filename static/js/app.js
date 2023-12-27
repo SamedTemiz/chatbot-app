@@ -56,7 +56,8 @@ class Chatbox {
         this.messages.push(msg1);
 
         // Sunucuya mesaj gönderilir ve yanıt beklenir
-        fetch('http://127.0.0.1:5000/predict', {
+        //'http://127.0.0.1:5000/predict'
+        fetch($SCRIPT_ROOT + '/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',

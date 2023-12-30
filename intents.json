@@ -17,6 +17,20 @@
         "Merhaba, size nasıl yardım edebilirim?"
       ]
     },
+
+    {
+        "tag": "laptop",
+        "patterns": [
+          "Önerdiğiniz laptop modelleri nelerdir?",
+          "Bana uygun bir laptop modeli önerebilir misiniz?",
+          "Laptop tavsiyesi alabilir miyim?"
+        ],
+        "responses": [
+          "Elbette! Size en uygun laptop modelini önermek için bazı bilgilerime ihtiyacım var. Lütfen aşağıdaki soruları yanıtlayınız:",
+          "Tabii, en iyi laptop modelini belirlemek için size birkaç sorum olacak. Lütfen aşağıdaki soruları yanıtlayınız:"
+        ]
+    },
+
     {
       "tag": "goodbye",
       "patterns": ["Hoşça kal", "Sonra görüşürüz", "Güle güle"],
@@ -35,12 +49,19 @@
       "tag": "items",
       "patterns": [
         "Hangi ürünlere sahipsiniz?",
-        "Neler var türden ürünleriniz?",
-        "Ne satıyorsunuz?"
+        "Satış yaptığınız ürünler nelerdir?",
+        "Ne tür ürünler satışta?",
+        "Laptop satıyor musunuz?",
+        "Satışta olan ürünler neler?",
+        "Ne satıyorsunuz?",
+        "Neler satıyorsunuz?",
+        "Hangi teknolojik ürünleri satıyorsunuz?"
       ],
       "responses": [
-        "Kahve ve çay satıyoruz",
-        "Bizde kahve ve çay bulunmaktadır"
+        "Sadece laptop bilgisayar satıyoruz.",
+        "Laptop türünde bilgisayar satışımız bulunmaktadır.",
+        "Teknolojik ürün olarak sadece laptop satışımız bulunmaktadır.",
+        "Evet, laptop vb. ürünler satıyoruz."
       ]
     },
     {

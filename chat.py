@@ -50,18 +50,30 @@ def get_response(msg):
 
     # Eğer tahminin olasılığı belirli bir eşiği geçiyorsa, uygun yanıt seçilir
     tag = tags[predicted.item()]
+
     print(tag)
+
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
+    print(prob.item())
+
     if prob.item() > 0.75:
         for intent in intents['intents']:
-            if tag == intent["tag"]:
-                if tag == "laptop":
-                    return "DENEME"
+            if tag == intent["tag"]:   
                 return random.choice(intent['responses'])
     
     # Eğer tahmin belirlenen eşik değerinin altındaysa anlaşılmadı mesajı döndürülür
     return "Anlayamadım..."
+
+def get_laptop_features(msg):
+    sentence = tokenize(msg)
+    print("GET LAPTOP FEATURES ÇALIŞTI")
+
+    return sentence
+
+
+
+
 
 # Ana döngü, kullanıcının çeşitli girişlerine yanıt almak için kullanılır
 if __name__ == "__main__":
@@ -70,6 +82,3 @@ if __name__ == "__main__":
         sentence = input("Ben: ")
         if sentence == "quit":
             break
-
-        resp = get_response(sentence)
-        print(resp)

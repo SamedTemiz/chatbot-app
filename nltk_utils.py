@@ -3,6 +3,8 @@ import nltk
 from trnlp import TrnlpToken
 from snowballstemmer import TurkishStemmer
 
+import re
+
 # Türkçe kök bulma işlemi için stemmer ve tokenizer tanımlanır
 stemmer = TurkishStemmer()
 tokenizer = TrnlpToken()
@@ -32,11 +34,23 @@ def bag_of_words(tokenized_sentence, words):
 
     return bag
 
+# Sayısal değerleri tokenize etmek için fonksiyon
+def tokenize_number(number):
+    tokens = re.finditer(r"\d+", number)
+    return [token.group() for token in tokens]
+
+
+
+
 # Örnek bir cümle tanımlanır ve bu cümle tokenlara ayrılır
-sentence = "Hangi ürünlere sahipsiniz?"
+sentence = "12GB ram 256gb ssd ve HP marka laptop istiyorum"
+
+tokenized_number = tokenize_number(sentence)
+print("Numaralar: ", tokenized_number)
+
 tokenized_sentence = tokenize(sentence)
-print("Tokenized Sentence:", tokenized_sentence)
+print("Tokenize edilmiş kelimeler: ", tokenized_sentence)
 
 # Tokenize edilmiş kelimelerin her biri köküne çevrilir ve ekrana yazdırılır
 stemmed_words = [stem(w) for w in tokenized_sentence]
-print("Stemmed Words:", stemmed_words)
+print("Kelime kökleri: ", stemmed_words)

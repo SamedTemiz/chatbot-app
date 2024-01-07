@@ -8,7 +8,10 @@
         "Nasılsın",
         "Orada kimse var mı?",
         "Merhabalar",
-        "Günaydın"
+        "Günaydın",
+        "sa",
+        "selamun aleykum",
+        "SA"
       ],
       "responses": [
         "Merhaba :-)",
@@ -19,17 +22,52 @@
     },
 
     {
-        "tag": "laptop",
-        "patterns": [
-          "Önerdiğiniz laptop modelleri nelerdir?",
-          "Bana uygun bir laptop modeli önerebilir misiniz?",
-          "Laptop tavsiyesi alabilir miyim?"
-        ],
-        "responses": [
-          "Elbette! Size en uygun laptop modelini önermek için bazı bilgilerime ihtiyacım var. Lütfen aşağıdaki soruları yanıtlayınız:",
-          "Tabii, en iyi laptop modelini belirlemek için size birkaç sorum olacak. Lütfen aşağıdaki soruları yanıtlayınız:"
-        ]
+      "tag": "laptop",
+      "patterns": [
+         "Önerdiğiniz laptop modelleri nelerdir?",
+         "Bana uygun bir laptop modeli önerebilir misiniz?",
+         "Laptop tavsiyesi alabilir miyim?",
+         "Hangi laptop modeli benim için en uygun olabilir?",
+         "Yeni bir laptop önerir misiniz?",
+         "Laptop seçimimde yardımcı olur musunuz?",
+         "Bütçeme uygun bir laptop tavsiye eder misiniz?",
+         "Marka önerisi alabilir miyim?",
+         "Uzun ömürlü bir laptop önerir misiniz?"
+      ],
+      "responses": [
+         "Elbette! Size en uygun laptop modelini önermek için bazı bilgilerime ihtiyacım var. Lütfen istediğiniz özellikleri yazınız(RAM, FİYAT, HAFIZA):",
+         "Tabii, en iyi laptop modelini belirlemek için size birkaç sorum olacak. Lütfen istediğiniz özellikleri yazınız(RAM, FİYAT, HAFIZA):",
+         "Peki, size en uygun laptop modelini önermek için bazı bilgiler almalıyım. Lütfen istediğiniz özellikleri yazınız(RAM, FİYAT, HAFIZA):",
+         "Anladım. En uygun laptop seçimi için size birkaç soru sormam gerekecek. Lütfen istediğiniz özellikleri yazınız(RAM, FİYAT, HAFIZA):",
+         "Tamam, size en uygun laptop modelini belirlemek için birkaç soru sormam gerekiyor. Lütfen istediğiniz özellikleri yazınız(RAM, FİYAT, HAFIZA):"
+      ]
     },
+
+    {
+      "tag": "laptop_features",
+      "patterns": [
+        "16GB ram 512gb ssd ve Apple marka laptop olsun",
+        "minimum 1TB hafızası olsun",
+        "ekran boyutu 14 inch ve 16gb ram",
+        "Dell marka bir laptop arıyorum",
+        "12GB ram 256gb ssd ve HP marka laptop istiyorum",
+        "SSD diskli 15 inch ekran ve 16GB ram olan laptop",
+        "ekran boyutu 17 inch, 32GB ram ve SSD diskli laptop",
+        "Samsung marka, 8GB ram ve 512gb hafızalı laptop olsun",
+        "Grafik tasarım için uygun, en az 16GB ram olan laptop"
+    ],
+      "responses": [
+        "Filtreleme başarıyla uygulandı.",
+        "İstediğiniz kriterlere uygun bir filtreleme gerçekleştirildi.",
+        "Seçtiğiniz özelliklere göre ürünler filtreleniyor.",
+        "Filtreleme işlemi tamamlandı. İlgilendiğiniz ürünler listeleniyor.",
+        "Kullanıcı tercihlerinize uygun olarak ürünler sıralandı.",
+        "Filtreleme seçenekleriniz dikkate alındı ve ürünler buna göre düzenlendi.",
+        "Özelliklere göre filtreleme işlemi tamamlandı.",
+        "İlgilendiğiniz kriterlere uygun olarak ürünler listelendi.",
+        "Filtreleme isteğiniz başarıyla işlendi ve ürünler buna göre sıralandı."
+    ]
+  },
 
     {
       "tag": "goodbye",
@@ -40,11 +78,13 @@
         "Güle güle! Bir dahaki sefere tekrar gelin."
       ]
     },
+
     {
       "tag": "thanks",
       "patterns": ["Teşekkürler", "Teşekkür ederim", "Bu yardımcı oldu", "Çok teşekkürler!"],
       "responses": ["Yardımcı olabildiysem mutluluk duyarım!", "Her zaman!", "Benim için bir zevkti"]
     },
+
     {
       "tag": "items",
       "patterns": [
@@ -62,43 +102,6 @@
         "Laptop türünde bilgisayar satışımız bulunmaktadır.",
         "Teknolojik ürün olarak sadece laptop satışımız bulunmaktadır.",
         "Evet, laptop vb. ürünler satıyoruz."
-      ]
-    },
-    {
-      "tag": "payments",
-      "patterns": [
-        "Kredi kartı alıyor musunuz?",
-        "Mastercard'ı kabul ediyor musunuz?",
-        "Paypal ile ödeme yapabilir miyim?",
-        "Sadece nakit mi kabul ediyorsunuz?"
-      ],
-      "responses": [
-        "VISA, Mastercard ve Paypal kabul ediyoruz",
-        "Çoğu büyük kredi kartını ve Paypal'ı kabul ediyoruz"
-      ]
-    },
-    {
-      "tag": "delivery",
-      "patterns": [
-        "Teslimat ne kadar sürer?",
-        "Kargo ne kadar sürer?",
-        "Teslimatımı ne zaman alırım?"
-      ],
-      "responses": [
-        "Teslimat 2-4 gün sürer",
-        "Kargo 2-4 gün sürer"
-      ]
-    },
-    {
-      "tag": "funny",
-      "patterns": [
-        "Bana bir şaka anlat!",
-        "Bana komik bir şey söyle!",
-        "Bir şaka biliyor musun?"
-      ],
-      "responses": [
-        "Neden hipster ağzını yaktı? Kahveyi soğumadan içti.",
-        "Bufalo'nun oğlu üniversiteye giderken ne dedi? Bison."
       ]
     }
   ]
